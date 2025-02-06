@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <title>About - Netflix API</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -30,21 +30,13 @@
         }
 
         .content h2 {
-            font-size: 1.8rem;
+            font-size: 2rem;
             margin-bottom: 20px;
         }
 
         .content p {
             font-size: 1.2rem;
             line-height: 1.6;
-        }
-
-        .code {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 1.1rem;
         }
 
         footer {
@@ -77,30 +69,23 @@
 </head>
 <body>
     <header>
-        <h1>{{ title }}</h1>
+        <h1>About Netflix API</h1>
     </header>
 
     <div class="content">
-        <h2>Welcome to the Netflix API</h2>
-        <p>This API allows you to filter Netflix content data based on various query parameters. You can filter movies and TV shows by release year, rating, and content type.</p>
-        
-        <h3>Available Filters:</h3>
+        <h2>Welcome to the Netflix API!</h2>
+        <p>Our Netflix API provides access to a vast collection of data about movies and TV shows available on Netflix. You can filter content by release year, rating, and content type (e.g., movies or TV shows).</p>
+
+        <h3>What can you do with this API?</h3>
         <ul>
-            <li><strong>Release Year:</strong> Filter by the year the content was released.</li>
-            <li><strong>Rating:</strong> Filter by content rating (e.g., "PG", "R").</li>
-            <li><strong>Content Type:</strong> Filter by type of content (e.g., "Movie", "TV Show").</li>
+            <li>Retrieve detailed information about movies and TV shows</li>
+            <li>Filter data based on various criteria (e.g., year, rating, type)</li>
+            <li>Integrate Netflix data into your own applications</li>
         </ul>
 
-        <p>Use the <code class="code">/api</code> endpoint with the following query parameters:</p>
-        <ul>
-            <li><strong>release_year</strong>: The year the content was released.</li>
-            <li><strong>rating</strong>: The rating of the content (e.g., "PG", "R").</li>
-            <li><strong>type</strong>: The type of content ("movie" or "tv show").</li>
-        </ul>
+        <p>If you are a developer looking to access Netflix's vast library of content data, this is the API for you!</p>
 
-        <a href="/api?release_year=2020" class="button">Example: Filter by Release Year 2020</a>
-        <a href="/api?rating=PG-13" class="button">Example: Filter by Rating PG-13</a>
-        <a href="/api?type=movie" class="button">Example: Filter by Type Movie</a>
+        <a href="/" class="button">Go to Home</a>
     </div>
 
     <footer>

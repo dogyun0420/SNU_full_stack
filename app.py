@@ -9,6 +9,10 @@ app = Flask(__name__)
 def hello_world():
     return render_template("index.html", title="Hello")
 
+@app.route("/About")
+def about():
+    return render_template("about.html", title="Hello")
+
 # @app.route("/api")
 # def api():
 #     return {"message": "Hello"}
